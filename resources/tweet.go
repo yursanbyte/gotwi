@@ -5,6 +5,7 @@ import "time"
 type Tweet struct {
 	ID                  *string             `json:"id"`
 	Text                *string             `json:"text"`
+	Username            *string             `json:"username"`
 	EditHistoryTweetIDs []*string           `json:"edit_history_tweet_ids"`
 	Attachments         *TweetAttachments   `json:"attachments,omitempty"`
 	AuthorID            *string             `json:"author_id,omitempty"`
